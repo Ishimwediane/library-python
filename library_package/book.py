@@ -6,7 +6,5 @@ class Book:
         self.is_available=is_available
         
     def __str__(self):
-        if self.is_available:
-            status="Available"
-        status="Not Available"
+        status = "avalabble" if self.is_available else "not avalable"
         return f"{self.title} by {self.author} ISBN: {self.isbn} and {status}"
